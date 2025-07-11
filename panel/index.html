@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Usama Dhuddi - VIP Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: radial-gradient(ellipse at center, #0f0f0f, #000);
+      background-image: linear-gradient(135deg, rgba(0,255,0,0.05) 1px, transparent 1px),
+                        linear-gradient(45deg, rgba(0,255,0,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .glass-box {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgba(0, 255, 0, 0.4);
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 700px;
+      backdrop-filter: blur(12px);
+      border: 2px solid rgba(0, 255, 0, 0.4);
+      text-align: center;
+    }
+
+    .title {
+      font-size: 42px;
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc;
+      margin-bottom: 35px;
+      animation: glowText 1.5s infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 25px #00ffff; }
+    }
+
+    .glow-btn {
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #00ff00;
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00ff00;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 25px #00ff00;
+      transition: 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .glow-btn:hover {
+      background-color: #00ff00;
+      color: black;
+      transform: scale(1.05);
+      box-shadow: 0 0 40px #00ff00;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px #00ff00; }
+      50% { box-shadow: 0 0 35px #00ff00; }
+      100% { box-shadow: 0 0 15px #00ff00; }
+    }
+
+    .footer-text {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #00ff99;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-box">
+    <div class="title">𓆩 𝗨𝘀𝗮𝗺𝗮 𝗗𝗵𝘂𝗱𝗱𝗶 𓆪</div>
+
+    <a href="https://wa.me/923239601585" target="_blank" class="glow-btn">📞 WhatsApp Contact</a>
+    <a href="https://whatsapp.com/channel/0029VavSK8U8fewp1htKiS21" target="_blank" class="glow-btn">📡 WhatsApp Channel 1</a>
+    <a href="https://whatsapp.com/channel/0029VbAJEYO77qVLPKx0Sd04" target="_blank" class="glow-btn">📡 WhatsApp Channel 2</a>
+    <a href="https://whatsapp.com/channel/0029VbAD3gs3rZZVbJV0km1B" target="_blank" class="glow-btn">📡 WhatsApp Channel 3</a>
+    <a href="https://chat.whatsapp.com/LfmxfyGaRvCKmH0TPPICt7?mode=ac_c" target="_blank" class="glow-btn">👥 WhatsApp Group 1</a>
+    <a href="https://chat.whatsapp.com/DwApYMyV5sc0XJCsxwbjAC?mode=ac_c" target="_blank" class="glow-btn">👥 WhatsApp Group 2</a>
+    <a href="https://www.facebook.com/share/19fbu2RmME/" target="_blank" class="glow-btn">📘 Facebook</a>
+    <a href="https://youtube.com/@masterusama960?si=lnCW7S74BHP1jnMe" target="_blank" class="glow-btn">▶️ YouTube</a>
+
+    <div class="footer-text">VIP Panel Interface by Usama Dhuddi</div>
+  </div>
+
+</body>
+</html>
